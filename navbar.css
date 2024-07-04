@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa; /* ubah warna background */
+}
+.navbar{
+    background-color: #343a40; /* ubah warna background navbar */
+    margin: 0;
+    padding:  20px 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tombol{
+    display: none;
+    color: white;
+    font-size: 18pt; /* ubah ukuran font tombol */
+}
+.tombol:hover{
+    cursor: pointer;
+}
+.menu{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+.menu li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    border-radius: 5px; /* Tambahkan border-radius */
+    transition: background-color 0.3s; /* Animasi hover */
+}
+.menu li a:hover{
+    background-color: #6c757d; /* Warna latar belakang pada hover */
+}
+.btn-menu {
+    background-color: #007bff; /* Warna tombol menu */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px; /* Tambahkan border-radius */
+    transition: background-color 0.3s; /* Animasi hover */
+}
+.btn-menu:hover {
+    background-color: #0056b3; /* Warna tombol menu pada hover */
+}
+.btn-logout {
+    background-color: #dc3545; /* Warna tombol logout */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px; /* Tambahkan border-radius */
+    transition: background-color 0.3s; /* Animasi hover */
+}
+.btn-logout:hover {
+    background-color: #c82333; /* Warna tombol logout pada hover */
+}
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #343a40;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
+}

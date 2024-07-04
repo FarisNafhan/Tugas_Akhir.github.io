@@ -1,0 +1,74 @@
+
+
+.top{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+}
+
+.top li{
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.top a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.top a:hover{
+    background-color: #555;
+}
+
+.login{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align:center;
+}
+
+form {
+    text-align: center;
+}
+body{
+    background-color: #f2f2f2;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"]{
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+input[type="submit"]{
+    background-color: #007bff;
+color:#fff;
+cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+.top li a[href="master-role.php"]{
+    background-color: #000203;
+    color:#fff;
+    margin: 15px;
+    padding: 10px;
+}
+.logout a{ 
+    background-color:#fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
